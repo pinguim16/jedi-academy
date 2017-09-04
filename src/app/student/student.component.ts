@@ -9,11 +9,14 @@ import { Student } from './student.model';
 })
 export class StudentComponent implements OnInit {
 
-  @Input() student : Student;
-  
+  @Input() student: Student;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  clicked() {
+    console.log(`Student : ${this.student.name}`);
+  }
 }
